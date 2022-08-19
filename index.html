@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SuperCursos</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- nav-top -->
+    <nav
+      class="container navbar navbar-expand-lg navbar-light bg-white sticky-top"
+    >
+      <div class="container">
+        <a class="navbar-brand logo" href="#"
+          ><span class="super">Super</span>Cursos</a
+        >
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Cursos</a>
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="btn btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            data-bs-whatever="Ingresa tu nombre."
+          >
+            Contáctanos
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Nuevo mensaje</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label"
+                  >Asunto:</label
+                >
+                <input type="text" class="form-control" id="recipient-name" />
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label"
+                  >Mensaje:</label
+                >
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cerrar
+            </button>
+            <button type="button" class="btn btn-primary">
+              Enviar mensaje
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- slider -->
+    <div id="home" class="container carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/slide-1.jpeg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Somos los mejores</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slide-2.jpeg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Somos los mejores</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/slide-3.jpeg" class="d-block w-100" alt="..." />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Somos los mejores</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- cursos -->
+    <h1 id="courses" class="text-center">Cursos</h1>
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <h6 class="card-header text-bg-dark text-center">
+              50 % de descuento
+            </h6>
+            <img
+              src="https://www.insideb2b.com/wp-content/uploads/2018/02/Office365-1024x488.jpg"
+              alt="AL"
+              width="100%"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">Office 365</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <h6 class="card-header text-bg-dark text-center">
+              50 % de descuento
+            </h6>
+            <img
+              src="https://www.insideb2b.com/wp-content/uploads/2018/02/Office365-1024x488.jpg"
+              alt="AL"
+              width="100%"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">Office 365</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <h6 class="card-header text-bg-dark text-center">
+              50 % de descuento
+            </h6>
+            <img
+              src="https://www.insideb2b.com/wp-content/uploads/2018/02/Office365-1024x488.jpg"
+              alt="AL"
+              width="100%"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">Office 365</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 mt-3">
+          <div class="card">
+            <h6 class="card-header text-bg-dark text-center">
+              50 % de descuento
+            </h6>
+            <img
+              src="https://www.insideb2b.com/wp-content/uploads/2018/02/Office365-1024x488.jpg"
+              alt="AL"
+              width="100%"
+            />
+            <div class="card-body text-center">
+              <h4 class="card-title">Office 365</h4>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary">Comprar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                  <div class="modal-body p-0">
+                      <div class="container-fluid">
+                          <div class="row gy-4">
+                              <div class="col-lg-4 col-sm-12 bg-cover"
+                                  style="background-image: url(img/c2.jpg); min-height:300px;">
+                                  <div>
+                                      
+                                  </div>
+                              </div>
+                              <div class="col-lg-8">
+                                  <form class="p-lg-5 col-12 row g-3">
+                                      <div>
+                                        <h1>Contáctanos</h1>
+                                        <p>Rellene el siguiente formulario:</p>
+                                      </div>
+                                      <div class="col-lg-6">
+                                          <label for="userName" class="form-label">Nombre</label>
+                                          <input type="text" class="form-control" placeholder="Juan Perez">
+                                      </div> 
+                                      <div class="col-6">
+                                          <label for="userName" class="form-label">Correo electrónico</label>
+                                          <input type="email" class="form-control" placeholder="juanperez@gmail.com">
+                                      </div>
+                                      <div class="col-12">
+                                          <label for="exampleInputEmail1" class="form-label">Ingresa tu mensaje en el siguiente cuadro:</label>
+                                          <textarea name="" placeholder="Requiero de su ayuda..." class="form-control" rows="4"></textarea>
+                                      </div>
+  
+                                      <div class="col-12">
+                                          <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                                      </div>
+                                  </form>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+              </div>
+          </div>
+      </div> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
